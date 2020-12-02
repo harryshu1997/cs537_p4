@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8764A22C2571370D0069CAAE /* parse_line.c in Sources */ = {isa = PBXBuildFile; fileRef = 8764A22B2571370D0069CAAE /* parse_line.c */; };
 		878B22AE256D097A00C89BBB /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 878B22AD256D097A00C89BBB /* main.c */; };
-		878B22B7256D1CBE00C89BBB /* HashTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 878B22B6256D1CBE00C89BBB /* HashTable.c */; };
+		8791E93B257727F800825487 /* schedules.c in Sources */ = {isa = PBXBuildFile; fileRef = 8791E93A257727F800825487 /* schedules.c */; };
+		8791E93F25772B9700825487 /* schduler_fifo.c in Sources */ = {isa = PBXBuildFile; fileRef = 8791E93E25772B9700825487 /* schduler_fifo.c */; };
+		8791E94325772C8800825487 /* schduler_lru.c in Sources */ = {isa = PBXBuildFile; fileRef = 8791E94225772C8800825487 /* schduler_lru.c */; };
+		8791E94725772C9C00825487 /* schduler_clock.c in Sources */ = {isa = PBXBuildFile; fileRef = 8791E94625772C9C00825487 /* schduler_clock.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +28,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8764A227257133200069CAAE /* uthash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uthash.h; sourceTree = "<group>"; };
+		8764A22A2571370D0069CAAE /* parse_line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parse_line.h; sourceTree = "<group>"; };
+		8764A22B2571370D0069CAAE /* parse_line.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parse_line.c; sourceTree = "<group>"; };
 		878B22AA256D097A00C89BBB /* cs537_p4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cs537_p4; sourceTree = BUILT_PRODUCTS_DIR; };
 		878B22AD256D097A00C89BBB /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		878B22B5256D1CBE00C89BBB /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashTable.h; sourceTree = "<group>"; };
-		878B22B6256D1CBE00C89BBB /* HashTable.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HashTable.c; sourceTree = "<group>"; };
+		8791E939257727F800825487 /* schedules.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schedules.h; sourceTree = "<group>"; };
+		8791E93A257727F800825487 /* schedules.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = schedules.c; sourceTree = "<group>"; };
+		8791E93D25772B9700825487 /* schduler_fifo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schduler_fifo.h; sourceTree = "<group>"; };
+		8791E93E25772B9700825487 /* schduler_fifo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = schduler_fifo.c; sourceTree = "<group>"; };
+		8791E94125772C8800825487 /* schduler_lru.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schduler_lru.h; sourceTree = "<group>"; };
+		8791E94225772C8800825487 /* schduler_lru.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = schduler_lru.c; sourceTree = "<group>"; };
+		8791E94525772C9C00825487 /* schduler_clock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = schduler_clock.h; sourceTree = "<group>"; };
+		8791E94625772C9C00825487 /* schduler_clock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = schduler_clock.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +73,18 @@
 		878B22AC256D097A00C89BBB /* cs537_p4 */ = {
 			isa = PBXGroup;
 			children = (
+				8764A227257133200069CAAE /* uthash.h */,
 				878B22AD256D097A00C89BBB /* main.c */,
-				878B22B5256D1CBE00C89BBB /* HashTable.h */,
-				878B22B6256D1CBE00C89BBB /* HashTable.c */,
+				8764A22A2571370D0069CAAE /* parse_line.h */,
+				8764A22B2571370D0069CAAE /* parse_line.c */,
+				8791E939257727F800825487 /* schedules.h */,
+				8791E93A257727F800825487 /* schedules.c */,
+				8791E93D25772B9700825487 /* schduler_fifo.h */,
+				8791E93E25772B9700825487 /* schduler_fifo.c */,
+				8791E94125772C8800825487 /* schduler_lru.h */,
+				8791E94225772C8800825487 /* schduler_lru.c */,
+				8791E94525772C9C00825487 /* schduler_clock.h */,
+				8791E94625772C9C00825487 /* schduler_clock.c */,
 			);
 			path = cs537_p4;
 			sourceTree = "<group>";
@@ -123,8 +145,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878B22B7256D1CBE00C89BBB /* HashTable.c in Sources */,
 				878B22AE256D097A00C89BBB /* main.c in Sources */,
+				8791E93F25772B9700825487 /* schduler_fifo.c in Sources */,
+				8791E94725772C9C00825487 /* schduler_clock.c in Sources */,
+				8791E93B257727F800825487 /* schedules.c in Sources */,
+				8791E94325772C8800825487 /* schduler_lru.c in Sources */,
+				8764A22C2571370D0069CAAE /* parse_line.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
